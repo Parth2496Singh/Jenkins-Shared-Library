@@ -4,4 +4,6 @@ def call(String DockerImage, String ImageTag, String dockerhubuser){
   sh "docker image tag ${DockerImage}:${ImageTag} ${dockerhubuser}/${DockerImage}:${ImageTag}"
   sh "docker push ${dockerhubuser}/${DockerImage}:${ImageTag}"
   }
+}
+  
   
